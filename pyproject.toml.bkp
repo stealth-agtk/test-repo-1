@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url_extras_package"
+version = "0.1.0"
+description = "A package demonstrating URL-based extras dependencies"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+standard = ["numpy"]
+json_data = ["json_data @ https://example.com/path/to/json_data-0.1.0.zip"]
+git_component = ["git_component @ git+https://github.com/user/repo.git@main"]
+monorepo_component = ["specific_package @ git+https://github.com/user/monorepo.git@main#subdirectory=packages/specific_package"]
+complete = [
+    "numpy",
+    "json_data @ https://example.com/path/to/json_data-0.1.0.zip",
+    "git_component @ git+https://github.com/user/repo.git@main"
+]

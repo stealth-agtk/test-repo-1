@@ -1,0 +1,14 @@
+{
+  "name": "Sample JSON Data",
+  "version": "1.0",
+  "description": "This JSON file is packaged as an extra dependency",
+  "items": [
+    {"id": 1, "name": "Item 1"},
+    {"id": 2, "name": "Item 2"},
+    {"id": 3, "name": "Item 3"}
+  ],
+  "metadata": {
+    "created": "2023-07-10",
+    "author": "Your Name"
+  }
+}
