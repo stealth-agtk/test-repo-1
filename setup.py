@@ -16,16 +16,8 @@ setup(
         "json_data": [
             "json_data @ https://example.com/path/to/json_data-0.1.0.zip",
         ],
-        "git_component": [
-            "git_component @ git+https://github.com/user/repo.git@main",
-        ],
         "monorepo_component": [
-            "json_data @ git+https://github.com/stealth-agtk/test-repo-1.git@main#subdirectory=examples/json_data_package",
-        ],
-        "complete": [
-            "numpy",
-            "json_data @ https://example.com/path/to/json_data-0.1.0.zip",
-            "git_component @ git+https://github.com/user/repo.git@main",
+            "json_data @ git+https://github.com/stealth-agtk/test-repo-1.git@main#subdirectory=feature1",
         ],
     },
     # Make package include data files
