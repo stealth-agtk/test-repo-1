@@ -29,6 +29,10 @@ pip install ".[monorepo_component]"
 pip install ".[complete]"
 ```
 
+```sh
+pip uninstall -y json_data url_extras_package
+```
+
 ## Usage
 
 ```python
