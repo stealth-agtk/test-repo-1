@@ -30,6 +30,8 @@ pip install ".[complete]"
 ```
 
 ```sh
+pip install ".[feature1]"
+
 pip uninstall -y json_data url_extras_package
 ```
 
